@@ -28,6 +28,7 @@ RUN wget -O /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
     && rm /usr/local/bin/gosu.asc \
     && chmod +x /usr/local/bin/gosu
 
-ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["ansible-playbook","--help"]
