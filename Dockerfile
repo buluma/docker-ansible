@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
-RUN chmod +x entrypoint.sh
-COPY entrypoint.sh /usr/src/entrypoint.sh
+# RUN chmod +x entrypoint.sh
+# COPY entrypoint.sh /usr/src/entrypoint.sh
 
 RUN apt-get update && apt-get install -y \
 	python-pip  \
@@ -35,5 +35,5 @@ RUN wget -O /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/dow
 # RUN chmod +x entrypoint.sh
 # COPY entrypoint.sh /entrypoint.sh
 # ENTRYPOINT ["/entrypoint.sh"]
-ENTRYPOINT ["/usr/src/entrypoint.sh"]
+# ENTRYPOINT ["/usr/src/entrypoint.sh"]
 CMD ["ansible-playbook","--help"]
