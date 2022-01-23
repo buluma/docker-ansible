@@ -1,4 +1,4 @@
 # Docker Ansible
-[![Build and Push Container](https://github.com/buluma/docker-ansible/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/buluma/docker-ansible/actions/workflows/build.yml) ![Docker Pulls](https://img.shields.io/docker/pulls/buluma/docker-ansible)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/buluma/docker-ansible/build.yml/main?style=for-the-badge) ![Docker Pulls](https://img.shields.io/docker/pulls/buluma/docker-ansible?style=for-the-badge) ![Docker Image Size (latest semver)](https://img.shields.io/docker/image-size/buluma/docker-ansible?style=for-the-badge)
 
 A Docker image with Ansible installed
