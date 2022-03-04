@@ -20,7 +20,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Test the image builds and works correctly.
   test:
     name: Test
     runs-on: ubuntu-latest
